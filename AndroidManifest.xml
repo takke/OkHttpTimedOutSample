@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.takke.okhttptimedoutsample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="jp.takke.okhttptimedoutsample.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <meta-data android:name="consumerKey" android:value="fill your app consumer key" />
+        <meta-data android:name="consumerSecret" android:value="fill your app cosumer secret" />
+        <meta-data android:name="accessToken" android:value="fill your access token" />
+        <meta-data android:name="accessTokenSecret" android:value="fill your access token secret" />
+    </application>
+
+</manifest>
